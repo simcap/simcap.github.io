@@ -1,1 +1,1 @@
-Personnal page at http://simcap.github.io/simon-caplette
+Personnal page at http://simcap.github.io
