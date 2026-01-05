@@ -25,3 +25,20 @@ cite {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+
+    p {
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    ul {
+        border-left: solid silver;
+    }
+}
+
