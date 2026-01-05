@@ -1,0 +1,8 @@
+baseURL: https://simcap.github.io/
+languageCode: en-us
+title: CV - Simon Caplette
+
+caches:
+  images:
+    dir: :cacheDir/images
+

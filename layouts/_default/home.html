@@ -1,9 +1,16 @@
+{{ define "header" }}
+    <h1>SIMON CAPLETTE - Hands-on Technical Lead</h1>
+    <span>Located in central Paris</span> | <a href="https://www.linkedin.com/in/simoncaplette" target="_blank">LinkedIn Profile</a> |
+    <a href="https://github.com/simcap" target="_blank">Github Profile</a>
+{{ end }}
+
+{{ define "main" }}
 <section id="summary">
     <h2>SUMMARY</h2>
     <p>For two decades, I've collaborated to create, secure and launch robust, scalable software solutions across diverse teams and industries in global hubs including Sydney, London, New York, and Paris.</p>
-    <p>I have a passion for the <i>Go language and its ecosystem</i> which I have been deploying in production for the last 12 years. 
+    <p>I have a passion for the <i>Go language and its ecosystem</i> which I have been deploying in production for the last 12 years.
         I teach professional & production Go through <a href="https://rekon.io/workshops/" target="_blank">my own hands-on workshops based on real life content.</a></p>
-    <p>My expertise also extends to the security sector, where I provide tooling, automation and consultancy (here is a <a href="/security.html" target="_blank">dedicated page filtering on security work only</a>).</p>
+    <p>My expertise also extends to the security sector, where I provide tooling, automation and consultancy (here is a <a href="/security" target="_blank">dedicated page filtering on security work only</a>).</p>
     <p>On a daily basis, I:</p>
     <ul>
         <li><b>Design, build and deploy</b> large platforms, high volume services & APIs, backend infrastructure, tooling</li>
@@ -11,17 +18,17 @@
         <li><b>Oversee and evaluate</b> the security of software products, APIs, applications, platforms and infrastructure</li>
         <li><b>Teach, train and evangelize</b> Go, Security and eXtreme Programming techniques</li>
     </ul>
-<p>Industries I built products for:</p>
+    <p>Industries I built products for:</p>
     <ul>
-        <li>Finance & Fintech, P2P streaming platform, Sports & Gaming, NFT, Blockchain (Ethereum)</li>    
+        <li>Finance & Fintech, P2P streaming platform, Sports & Gaming, NFT, Blockchain (Ethereum)</li>
         <li>Social Networking, Cybersecurity, Internet Service Provider, Insurance, E-Learning</li>
     </ul>
     <p>Positions held:</p>
-        <ul>
-            <li>Principal Engineer, Principal Scalability Engineer, Platform Engineer, Technical Lead, Team Lead, DevOps Engineer</li>
-            <li>Senior Offensive Security Engineer, Security Lead Engineer, SecOps Engineer</li>
-            <li>Lead Rails Developer, Senior Agile Java Developer, Backend Developer, Scrum Master, Agile & XP Coach</li>
-        </ul>
+    <ul>
+        <li>Principal Engineer, Principal Scalability Engineer, Platform Engineer, Technical Lead, Team Lead, DevOps Engineer</li>
+        <li>Senior Offensive Security Engineer, Security Lead Engineer, SecOps Engineer</li>
+        <li>Lead Rails Developer, Senior Agile Java Developer, Backend Developer, Scrum Master, Agile & XP Coach</li>
+    </ul>
     <p>Practices I value:</p>
     <ul>
         <li>Pragmatism, Simplicity, Know your tools, Don't break the customer/user</li>
@@ -35,9 +42,9 @@
 <section id="education">
     <h2>EDUCATION</h2>
     <ul>
-    <li>Grande École Telecom Paris | Signal Processing, Multimedia (2003 - 2004)</li>
-    <li>Grande École Telecom Bretagne | Telecommunications, Networks & Computing (2002 - 2003)</li>
-    <li>Université des Sciences Montpellier | Graduated top of my class - M. Sc of Electronical Engineering (1998 - 2002)</li>
+        <li>Grande École Telecom Paris | Signal Processing, Multimedia (2003 - 2004)</li>
+        <li>Grande École Telecom Bretagne | Telecommunications, Networks & Computing (2002 - 2003)</li>
+        <li>Université des Sciences Montpellier | Graduated top of my class - M. Sc of Electronical Engineering (1998 - 2002)</li>
     </ul>
 </section>
 
@@ -102,7 +109,7 @@
     <div><cite>"Rien à redire. Présent. Disponible. À l'écoute."</cite> - Developer at Ankama</div>
 </section>
 
-<main>
+<div>
     <h2>WORK EXPERIENCE</h2>
 
     <div class="card">
@@ -155,7 +162,7 @@
             <li>Blockchain: patches on our Ethereum bridge</li></li>
             <li>Constant and full reviews of all incoming PRs, pairing and mentoring: for a new batch of 5 new Go junior developers freshly hired + existing Candy backend developers</li>
         </ul>
-        <h5>Improbable (UK) from May / November 2021</h5> 
+        <h5>Improbable (UK) from May / November 2021</h5>
         <p>Working with <a href="https://www.improbable.io/" target="_blank">Improbable</a> to implement collectively a brand <b>new and modern Go orchestration platform for the multi-players industry</b></p>
         <ul>
             <li>Initial security assets assessment and inventory of the product: perimeter, ratio of obsolete sowftares, cryptography used, etc.</li>
@@ -171,10 +178,10 @@
             Immersion in various teams to provide targeted implementations, solve technical & performance issues, and audit various internal systems (customized internal CI built on Kubernetes, SMS sending pipeline, etc.).
         </p>
     </div>
-    
+
     <div class="card">
         <h3>Contractor Technical Lead - <a href="https://twitter.com/rockside_io" target="_blank">Rockside</a> (Development, Design, Ethereum, Blockchain, Security, Infra & Architecture)<time>Nov 2019 / July 2020</time></h3>
-        <h5>Security</h5> 
+        <h5>Security</h5>
         <ul>
             <li>Defining a sound yet simple security model for the infrastructure and our operational side of it</li>
             <li>Security audits of our various component notably our wallet before ANSSI review</li>
@@ -183,26 +190,26 @@
 
         <h5>Core</h5>
         <p>
-            <ul>
-                <li>Overall re-architecturing/designing/organizing of our Go codebase (importantly done along the way and not as a rewrite!)</li>
-                <li>Team development of a new Ethereum relayer and adjoining Ethereum Solidity contracts (ex: EIP-712, proxy, factory, meta transactions)</li>
-                <li>Designing the DB models and interactions (Mongo and PostgreSQL)</li>
-                <li>Implementing and introducing various level of sound testing: unit, integration and acceptance</li>
-                <li>Leveraging the library go-ethereum to simplify and make our code base more typed hence more robust and scalable</li>
-                <li>Teaching and implementing new team, development practices</li>
-            </ul>
+        <ul>
+            <li>Overall re-architecturing/designing/organizing of our Go codebase (importantly done along the way and not as a rewrite!)</li>
+            <li>Team development of a new Ethereum relayer and adjoining Ethereum Solidity contracts (ex: EIP-712, proxy, factory, meta transactions)</li>
+            <li>Designing the DB models and interactions (Mongo and PostgreSQL)</li>
+            <li>Implementing and introducing various level of sound testing: unit, integration and acceptance</li>
+            <li>Leveraging the library go-ethereum to simplify and make our code base more typed hence more robust and scalable</li>
+            <li>Teaching and implementing new team, development practices</li>
+        </ul>
         </p>
         <h5>DevOps</h5>
         <p>
-            <ul>
-                <li>
-                    Meeting the required and short deadline for creating from scratch 3 full new environments and
-                    infrastructure for our new platform
-                </li>
-                <li>New CI/CD pipeline with a brand new original component bringing simplified automation.</li>
-            </ul>
+        <ul>
+            <li>
+                Meeting the required and short deadline for creating from scratch 3 full new environments and
+                infrastructure for our new platform
+            </li>
+            <li>New CI/CD pipeline with a brand new original component bringing simplified automation.</li>
+        </ul>
         </p>
-        
+
         <h5>Others</h5>
         <ul>
             <li>Implementing a pragmatic internal dashboard to understand our data</li>
@@ -213,18 +220,18 @@
     <div class="card">
         <h3>Contractor Technical Lead - <a href="https://www.edulib.fr/" target="_blank">Edulib</a> (Design, Development, Security, Infra, Scalability)<time>Nov 2018 / Jun 2019</time></h3>
         <p>
-            <ul>
-                <li>Technical and security audit: backend code, infrastructure, development practices, tooling, etc.</li>
-                <li>Complete transfer under my sole responsibility of the code & platform (from the historical provider and implementor)</li>
-                <li>Expose, document and explain current scalabilty and security issues with ad hoc threat modeling</li>
-                <li>Lay out plan and strategies for scaling, securing and improving the product</li>
-                <li>Put in place new security procedures as well as small iterative and agile processes for the reduced technical team and the transition period</li>
-                <li>Ensure transition and transfer of knowledge for new hires</li>
-                <li>Port internal Edulib services to a newly created standardized and more secured AWS infrastructure</li>
-                <li>Fix historical concurrency bugs in the Edulib Production Studio in view of the upcoming deadlines with Albin Michel, Belin, etc.</li>
-                <li>Implement monitoring of internal services using in part Prometheus</li>
-                <li>Introducing the Go language in production: writing new necessary modules and pair programming with developers</li>
-            </ul>
+        <ul>
+            <li>Technical and security audit: backend code, infrastructure, development practices, tooling, etc.</li>
+            <li>Complete transfer under my sole responsibility of the code & platform (from the historical provider and implementor)</li>
+            <li>Expose, document and explain current scalabilty and security issues with ad hoc threat modeling</li>
+            <li>Lay out plan and strategies for scaling, securing and improving the product</li>
+            <li>Put in place new security procedures as well as small iterative and agile processes for the reduced technical team and the transition period</li>
+            <li>Ensure transition and transfer of knowledge for new hires</li>
+            <li>Port internal Edulib services to a newly created standardized and more secured AWS infrastructure</li>
+            <li>Fix historical concurrency bugs in the Edulib Production Studio in view of the upcoming deadlines with Albin Michel, Belin, etc.</li>
+            <li>Implement monitoring of internal services using in part Prometheus</li>
+            <li>Introducing the Go language in production: writing new necessary modules and pair programming with developers</li>
+        </ul>
         </p>
     </div>
 
@@ -268,11 +275,11 @@
     <div class="card">
         <h3>Platform Engineer - <a href="https://www.crunchbase.com/organization/preplay" target="_blank">PrePlaySports (US company)</a> <time>Sept 2013 / Oct 2014</time></h3>
         <p>
-            <ul>
-                <li>In charge of a real time & social platform to allow sport's fan predictions on live games</li> 
-                <li>Implement adjoining gamification modules, API & services</li> 
-                <li>Collaborate in Features Teams with iPhone, Android and Web developers</li>
-            </ul>
+        <ul>
+            <li>In charge of a real time & social platform to allow sport's fan predictions on live games</li>
+            <li>Implement adjoining gamification modules, API & services</li>
+            <li>Collaborate in Features Teams with iPhone, Android and Web developers</li>
+        </ul>
         </p>
     </div>
 
@@ -282,7 +289,7 @@
     </div>
 
     <div class="card">
-        <h3>Contractor Ruby Developer - <a href="https://hivebrite.com/" target="_blank">Hivebrite</a> <time>April 2013 / June 2013</time></h3>   
+        <h3>Contractor Ruby Developer - <a href="https://hivebrite.com/" target="_blank">Hivebrite</a> <time>April 2013 / June 2013</time></h3>
         <p>Implementing full stack features for an application for private alumni communities. The online product is a white label for business & schools.</p>
     </div>
 
@@ -291,8 +298,8 @@
         <p><i>Mission as a Xebia consultant:</i></p>
         <ul>
             <li><a href="https://www.libon.com/" target="_blank">At Libon</a>: Extreme programming and team lead for an overall refactoring with ongoing features of a
-            live platform enabling chat, voicemail, messaging & free calls. Consumed by
-            iPhone, Android and web browser.</li>
+                live platform enabling chat, voicemail, messaging & free calls. Consumed by
+                iPhone, Android and web browser.</li>
         </ul>
         <p><i>Within Xebia firm:</i></p>
         <ul>
@@ -304,7 +311,7 @@
     </div>
 
     <div class="card">
-        <h3>Agile Software Developer - <a href="https://www.virginmedia.com/" target="_blank">Virgin Media</a> (London)<time>July 2009 / Sept 2010</time></h3>       
+        <h3>Agile Software Developer - <a href="https://www.virginmedia.com/" target="_blank">Virgin Media</a> (London)<time>July 2009 / Sept 2010</time></h3>
         <p>Implementing back-end features for the Virgin e-commerce website offering broadband and adjacent services.</p>
     </div>
 
@@ -322,6 +329,5 @@
         <h3>GUI Developer & System Designer - <a href="https://www.petards.com/" target="_blank">Petards</a> (London) <time>Jan 2006 / June 2006</time></h3>
         <p>Solo work to create a full in-car detection and alerting system prototype for an upcoming European commission trial.</p>
     </div>
-</main>
-</body>
-</html>
+</div>
+{{ end }}
