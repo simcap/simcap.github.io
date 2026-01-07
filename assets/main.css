@@ -1,9 +1,6 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 :root {
     --main-bordering-color: silver;
+    --keyword-color: #007bff;
 }
 
 body {
@@ -23,6 +20,13 @@ time {
 h2, h5 {
     text-align: center;
 }
+a {
+    text-decoration: none;
+    color: var(--keyword-color);
+}
+a:hover {
+    text-decoration: underline;
+}
 section {
     h2 {
         background-color: var(--main-bordering-color);
@@ -35,6 +39,10 @@ cite {
 img {
     border-radius: 10px;
 }
+footer {
+    margin-top: 3em;
+    text-align: center;
+}
 
 #header {
     display: flex;
@@ -45,15 +53,38 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    img {
+        justify-self: center;
+    }
 }
 
-#summary {
-    p {
-        font-size: larger;
-        margin-inline: 15em;
+#summary > p {
+    font-size: 1.2rem;
+    margin-inline: 1em;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+
+    label {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 1em;
     }
-    ul {
-        }
+    label::before {
+        content: "# ";
+    }
+
+    span {
+        border-radius: 5px;
+        padding: 1px 10px 3px 10px;
+        color: white;
+        font-weight: bold;
+        background-color: var(--keyword-color);
+    }
 }
 
 .card {
@@ -65,15 +96,22 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.grid-container {
+.grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    margin-block: 3em;
 
-    p {
-        text-align: center;
+    span {
+        margin: unset;
+        align-self: center;
         text-transform: uppercase;
         font-style: italic;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
     }
 
     ul {
