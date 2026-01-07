@@ -1,0 +1,23 @@
+<div id="header">
+    {{ with resources.Get "images/photo.jpg" }}
+    <img src="{{ .RelPermalink }}" alt="Photo" loading="lazy" height="200"/>
+    {{ end }}
+    <div>
+        <h1>Hands-on Technical Lead</h1>
+        <h2>Simon Caplette</h2>
+    </div>
+    <div id="social">
+            {{ with resources.Get "images/geoloc.png" }}
+            <img src="{{ .RelPermalink }}" alt="Location" loading="lazy" height="40"/>
+            {{ end }}
+            <a>Central Paris</a>
+            {{ with resources.Get "images/linkedin.png" }}
+            <img src="{{ .RelPermalink }}" alt="LinkedIn" loading="lazy" height="30"/>
+            {{ end }}
+            <a href="https://www.linkedin.com/in/simoncaplette" target="_blank">My LinkedIn</a>
+            {{ with resources.Get "images/github.png" }}
+            <img src="{{ .RelPermalink }}" alt="GitHub" loading="lazy" height="30"/>
+            {{ end }}
+            <a href="https://github.com/simcap" target="_blank">My GitHub</a>
+    </div>
+</div>
