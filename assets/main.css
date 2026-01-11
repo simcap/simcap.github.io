@@ -64,6 +64,26 @@ footer {
     margin-inline: 1em;
 }
 
+#summary  ul {
+    font-size: 1.1rem;
+}
+
+.iconic {
+    font-style: italic;
+}
+
+.go-icon {
+    color: #007d9c;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.sec-icon::before {
+    content: "🔒";
+    font-style: normal;
+    margin-inline: 0.1em;
+}
+
 .keywords {
     display: flex;
     flex-wrap: wrap;
