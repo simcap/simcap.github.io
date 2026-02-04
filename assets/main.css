@@ -59,7 +59,7 @@ footer {
     }
 }
 
-#summary > p {
+section > p {
     font-size: 1.2rem;
     margin-inline: 1em;
 }
@@ -67,6 +67,7 @@ footer {
 #summary  ul {
     font-size: 1.1rem;
 }
+
 
 .iconic {
     font-style: italic;
