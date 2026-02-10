@@ -85,6 +85,13 @@ section > p {
     margin-inline: 0.1em;
 }
 
+.craft-icon::before {
+    content: "🟢";
+    font-style: normal;
+    margin-inline: 0.1em;
+}
+
+
 .keywords {
     display: flex;
     flex-wrap: wrap;
